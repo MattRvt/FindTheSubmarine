@@ -1,0 +1,293 @@
+td
+/* Toutes les cellules des tableaux... */
+
+	{
+	border: 2px solid black;
+	/* auront une bordure de 1px */
+	background: #4ed1fda9;
+}
+
+h4 {
+	vertical-align: middle;
+	margin: 0;
+	position: absolute;
+	left: 1%;
+	margin-right: -1%;
+	transform: translate(-1%, -1%);
+	bottom: 50%;
+}
+
+h5 {
+	vertical-align: middle;
+	text-align: right;
+	position: absolute;
+	left: 78%;
+	bottom: 50%;
+	background-color: #00bfff;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 7px 25px;
+	text-decoration: none;
+	transform: translate(-50%, -50%);
+	background-color: rgb(101, 206, 255);
+}
+
+h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+body {
+	background: #282828;
+	background-image: url("background.png");
+	-webkit-background-size: fill-up;
+	-moz-background-size: fill-up;
+	-o-background-size: fill-up;
+	background-size: fill-up;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#switchTexte {
+	background-color: #00bfff;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 7px 25px;
+	text-decoration: none;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 175px;
+	background-color: rgb(101, 206, 255);
+}
+
+/*******************************button*********************************************/
+
+#t10x10 {
+	margin: 0;
+	background: rgb(4, 173, 252);
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 300px;
+}
+
+#t20x20 {
+	margin: 0;
+	background: rgb(4, 173, 252);
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 375px;
+}
+
+#t25x25 {
+	margin: 0;
+	background: rgb(4, 173, 252);
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 450px;
+}
+
+#surMesure {
+	margin: 0;
+	background: rgb(4, 173, 252);
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 525px;
+}
+
+#backHome {
+	margin: 0;
+	background: rgb(4, 173, 252);
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	bottom: 40px;
+}
+
+.mainMenu, .backHome {
+	-moz-box-shadow: 3px 4px 0px 1px #383738;
+	-webkit-box-shadow: 3px 4px 0px 1px #383738;
+	box-shadow: 0px 0px 0px 7px #0d0d25;
+	background-color: #00bfff;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 7px 25px;
+	text-decoration: none;
+}
+
+.mainMenu:hover, .backhome:hover, #surMesure:hover, #t25x25:hover, #t20x20:hover, #t10x10:hover, #backhome:hover {
+	background-color: #73dcffa9;
+}
+
+.mainMenu:active, .backhome:active, #surMesure:active, #t25x25:active, #t20x20:active, #t10x10:active, #backhome:active {
+	background-color: #0b5c77;
+}
+
+td:active {
+	border: 2px solid black;
+	background: #0081aca9;
+}
+
+/*******************************button*********************************************/
+
+/*******************************titre*********************************************/
+
+#title {
+	position: absolute;
+	top: -15px;
+	right: 50%;
+	/* Positions 50% from right (right edge will be at center) */
+	margin-right: -267px;
+	/* Positions 200px to the left of center */
+}
+
+#title2 {
+	position: absolute;
+	top: 45px;
+	right: 50%;
+	/* Positions 50% from right (right edge will be at center) */
+	margin-right: -220px;
+	/* Positions 200px to the left of center */
+}
+
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+.water-fill2 {
+	animation: wave 0.6s infinite linear, fill-up 40s infinite ease-out alternate;
+}
+
+.water-fill {
+	animation: wave 0.7s infinite linear, fill-up 40s infinite ease-out alternate;
+}
+
+@keyframes wave {
+	0% {
+		x: -400px;
+	}
+	100% {
+		x: 0;
+	}
+}
+
+@keyframes fill-up {
+	0% {
+		height: 0;
+		y: 130px;
+	}
+	100% {
+		height: 160px;
+		y: -30px;
+	}
+}
+
+/*******************************titre*********************************************/
+
+/*******************************switch*********************************************/
+
+/* The switch - the box around the slider */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 215px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #2196F3;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/*******************************switch*********************************************/
